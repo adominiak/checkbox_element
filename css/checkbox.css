@@ -14,14 +14,14 @@ label.toggle-background {
 
 	background-image: url("../x_element.png");
 	background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 20%;
     background-position: right 6px center;
-	padding-top: 2px ;
-	padding-bottom: 2px ;
-	padding-left: 2px ;
-	padding-right: 10px ;
+    padding-top: 2px;
+    padding-bottom: 2px;
+	padding-left: 3px ;
+	padding-right: 8px ;
 	height: 22px;
-	width: 30px;
+	width: 38px;
 	display: inline-block;
 	background-color: #14283c;
 
@@ -32,8 +32,8 @@ label.toggle-background {
 input[type="checkbox"].slider_checkbox:checked + label.toggle-background {
 	background-image: none;
 	text-align: center;
-	padding-left: 10px ;
-	padding-right: 2px ;
+	padding-left: 8px ;
+	padding-right: 3px ;
 	transition: padding 0.35s;
 }
 
@@ -46,7 +46,7 @@ span.circle {
 	line-height: 6px;
 	padding: 6px;
 	background-color: #ffd400;
- 	border-radius: 25px;
+ 	border-radius: 9px;
 	transition: background-color 0.35s;
 }
 input[type="checkbox"].slider_checkbox:checked + label > span.circle {
