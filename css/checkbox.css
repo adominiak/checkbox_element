@@ -1,0 +1,79 @@
+input[type="checkbox"].slider_checkbox{
+  display: none;  
+}
+input[type="checkbox"].slider_checkbox:checked {
+
+}
+
+label:before, label:after{
+	margin: 0px;
+}
+label.toggle-background {
+	padding-top: 2px ;
+	padding-bottom: 2px ;
+	padding-left: 2px ;
+	padding-right: 20px ;
+	height: 22px;
+	/*width: 40px;*/
+	background-color: #14283c;
+
+ 	border-radius: 16px 16px;
+ 	transition: padding 0.35s;
+ 	clear: both;
+}
+input[type="checkbox"]:checked + label.toggle-background {
+
+	text-align: center;
+	padding-left: 32px ;
+	padding-right: 2px ;
+	transition: padding 0.35s;
+}
+
+label.toggle-handle {
+	display: inline-block;
+	height: 6px;
+	width: 6px;
+	line-height: 6px;
+	padding: 6px;
+	background-color: #ffd400;
+ 	border-radius: 10px 10px;
+	transition: background-color 0.35s;
+}
+input[type="checkbox"]:checked + label > label.toggle-handle {
+
+/*	left: 20px;
+	position: relative;*/
+	background-color: #35506b;
+	transition: background-color 0.35s;
+
+}
+label.toggle-handle:after
+{
+	width: 20px;
+	background-image: url("../x_element.png");
+}
+
+input[type="checkbox"]:checked + label > label.toggle-handle:before {
+	display: inline-block;
+	line-height: 10px;
+	padding: 10px;
+	height: 20px;
+	width: 20px;
+	background-image: url("../x_element.png");
+}
+
+input[type="checkbox"]:checked + label > label.toggle-handle:after {
+	display: none;
+}
+
+/*.toggle-background{
+	background-color: #333377;
+ 	border-radius: 20px,30px;
+}
+
+.toggle-handle{
+	background-color: #FFDD00;
+ 	border-radius: 15px;
+}
+
+*/
