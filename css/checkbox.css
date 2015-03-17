@@ -35,6 +35,4 @@
 .custom-toggle > input[type="checkbox"]:checked ~ label > span.circle {
 	background-color: #35506b;
 	left: 18px;
-	transition: background-color 0.35s linear,
-				left 0.35s linear;
 }
