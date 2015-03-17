@@ -1,55 +1,47 @@
 
-
-input[type="checkbox"].slider_checkbox{
+.custom-toggle > input[type="checkbox"]{
   display: none;  
 }
-input[type="checkbox"].slider_checkbox:checked {
+/*switch background styling*/
+.custom-toggle > label {
+	display: inline-block;
+	height: 22px;
+	width: 38px;
+ 	border-radius: 16px 16px;
 
-}
-
-label:before, label:after{
-	margin: 0px;
-}
-label.toggle-background {
-
+	background-color: #14283c;
 	background-image: url("../x_element.png");
 	background-repeat: no-repeat;
     background-size: 20%;
     background-position: right 6px center;
-    padding-top: 2px;
+
+ 	padding-top: 2px;
     padding-bottom: 2px;
 	padding-left: 3px ;
 	padding-right: 8px ;
-	height: 22px;
-	width: 38px;
-	display: inline-block;
-	background-color: #14283c;
-
- 	border-radius: 16px 16px;
  	transition: padding 0.35s;
- 	clear: both;
 }
-input[type="checkbox"].slider_checkbox:checked + label.toggle-background {
-	background-image: none;
+.custom-toggle > input[type="checkbox"]:checked ~ label{
 	text-align: center;
 	padding-left: 8px ;
 	padding-right: 3px ;
 	transition: padding 0.35s;
 }
 
-span.circle {
+/*switch circle styling*/
+.custom-toggle > label > span.circle {
 	display: inline-block;
 	position: absolute;
 	margin-top: 2px;
 	height: 6px;
 	width: 6px;
 	line-height: 6px;
-	padding: 6px;
-	background-color: #ffd400;
  	border-radius: 9px;
+	background-color: #ffd400;
+	padding: 6px;
 	transition: background-color 0.35s;
 }
-input[type="checkbox"].slider_checkbox:checked + label > span.circle {
+.custom-toggle > input[type="checkbox"]:checked ~ label > span.circle {
 	background-color: #35506b;
 	transition: background-color 0.35s;
 }
