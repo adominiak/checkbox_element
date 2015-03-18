@@ -1,6 +1,5 @@
 (function ($) {
 	function Main() {
-	// TEST - namespace
 		new TEST.LimitedInput();
 	}
 

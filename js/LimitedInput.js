@@ -1,11 +1,14 @@
 (function ($) {
 	function LimitedInput() {
-		//this._$rootEl = $("div.word-count-textbox"); //przypisanie zmiennych
-		$('div.word-count-textbox').each(function(){
+		this._limitInput();
+	};
+
+	LimitedInput.prototype._limitInput = function() {
+		$('div.word-count-textbox').each(function() {
 			var max = $(this).children("input[max-word-count]").attr("max-word-count");
 			$(this).children("span").text(max);
 		});
-		$('div.word-count-textbox > input').keyup(function(event){
+		$('div.word-count-textbox > input').keyup(function(event) {
 	
 			//remember cursor
 			var cursorStartPosition = event.currentTarget.selectionStart,
@@ -24,10 +27,8 @@
 			// set word counter label
 			$(event.currentTarget).siblings("span").text(maxWords-wordCount);
 		});
-	}
+	};
 
-	// TEST.prototype._bindEvents = function() {
-	// };
 	window.TEST = window.TEST || {};
 	window.TEST.LimitedInput = LimitedInput;
 })(jQuery);
