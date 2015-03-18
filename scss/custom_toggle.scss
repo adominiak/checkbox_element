@@ -11,8 +11,8 @@ $toggle-handle-checked-color: #35506b;
 	}
 
 	label {
-		background: $toggle-background-color url("../x_element.png") no-repeat right 6px center / 11px;
-		border-radius: 16px 16px;
+		background: $toggle-background-color url("../x_element.png") no-repeat 80% 50%;
+		border-radius: 16px;
 		display: inline-block;
 		height: 22px;
 		padding: 2px 0px;
@@ -36,8 +36,8 @@ $toggle-handle-checked-color: #35506b;
 
 	input[type="checkbox"]:checked + label {
 		span.circle {
-		background-color: $toggle-handle-checked-color;
-		left: 19px;
+			background-color: $toggle-handle-checked-color;
+			left: 19px;
 		}
 	}
 }
